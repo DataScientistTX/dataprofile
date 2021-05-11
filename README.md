@@ -5,10 +5,10 @@
 In the  terminal from the home directory, use the command git clone, then paste the link from your clipboard, or copy the command and link from below:
 
 ```bash
-git clone https://github.com/sercangul/dataprofiler.git
+git clone https://github.com/sercangul/dataprofile.git
 ```
 
-Change directories to the new ~/dataprofiler directory:
+Change directories to the new ~/dataprofile directory:
 
 ```bash
 cd dataprofiler
@@ -17,7 +17,7 @@ cd dataprofiler
 To ensure that your master branch is up-to-date, use the pull command:
 
 ```bash
-git pull https://github.com/sercangul/dataprofiler.git
+git pull https://github.com/sercangul/dataprofile.git
 ```
 
 Install required python packages using requirements.txt:
@@ -28,10 +28,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-Change directories to the new ~/dataprofiler directory:
+Change directories to the new ~/dataprofile directory:
 
 ```bash
-cd dataprofiler
+cd dataprofile
 ```
 
 Run the script using Streamlit:
@@ -40,7 +40,7 @@ Run the script using Streamlit:
 streamlit run app.py
 ```
 
-The same app is also deployed to Heroku: http://dataprofiler.herokuapp.com/
+The same app is also deployed to Heroku: http://dataprofile.herokuapp.com/
 
 
 ## Contributing
