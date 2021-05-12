@@ -11,7 +11,7 @@ git clone https://github.com/sercangul/dataprofile.git
 Change directories to the new ~/dataprofile directory:
 
 ```bash
-cd dataprofiler
+cd dataprofile
 ```
 
 To ensure that your master branch is up-to-date, use the pull command:
