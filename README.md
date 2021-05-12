@@ -1,4 +1,4 @@
-# A Dashboard to Utilize Pandas Profiles from the Browser
+# No-code Exploratory Data Analysis: DataProfile
 
 ## Installation
 
