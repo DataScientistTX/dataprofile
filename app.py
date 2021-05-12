@@ -17,8 +17,6 @@ option = st.selectbox(
     'Choose pandas profiling mode:',
     ('Minimal', 'Explorative', 'Default'))
 
-st.write(option)
-
 if uploaded_file is None:
     st.write("Please upload your data from the left panel")
 
@@ -28,9 +26,11 @@ if uploaded_file is not None:
         pr = ProfileReport(df, title="Pandas Profiling Report")
 
     if option == "Minimal":
+        st.write("Selected option: Minimal. Please consider using Explorative if further exploration is required.")
         pr = ProfileReport(df, title="Pandas Profiling Report", minimal=True)
 
     if option == "Explorative":
+        st.write("Selected option: Explorative: This mode might be computationally expensive. Please consider using Minimal if you are experiencing problems.")
         pr = ProfileReport(df, title="Pandas Profiling Report", explorative=True)
 
     st.title("Pandas Profiling in Streamlit")
