@@ -1,5 +1,13 @@
 # No-code Exploratory Data Analysis: DataProfile
 
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
 ## Installation
 
 In the  terminal from the home directory, use the command git clone, then paste the link from your clipboard, or copy the command and link from below:
