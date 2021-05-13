@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Change directories to the new ~/dataprofile directory:
+Ensure you are in the correct directory. IF not, change directories to the new ~/dataprofile directory:
 
 ```bash
 cd dataprofile
