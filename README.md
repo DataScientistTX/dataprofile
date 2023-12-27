@@ -1,6 +1,6 @@
 # No-code Exploratory Data Analysis: DataProfile
 
-![alt text](https://github.com/sercangul/dataprofile/blob/main/gif.gif "Logo Title Text 1")
+![alt text](https://github.com/DataScientistTX/dataprofile/blob/main/gif.gif "Logo Title Text 1")
 
 ## Installation
 
@@ -42,8 +42,7 @@ Run the script using Streamlit:
 streamlit run app.py
 ```
 
-The same app is also deployed to Heroku: http://dataprofile.herokuapp.com/
-
+The same app is also deployed to Streamlit: https://dataprofile.streamlit.app/
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
