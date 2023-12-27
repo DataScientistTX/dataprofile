@@ -7,7 +7,7 @@
 In the  terminal from the home directory, use the command git clone, then paste the link from your clipboard, or copy the command and link from below:
 
 ```bash
-git clone https://github.com/sercangul/dataprofile.git
+git clone https://github.com/DataScientistTX/dataprofile.git
 ```
 
 Change directories to the new ~/dataprofile directory:
@@ -19,7 +19,7 @@ cd dataprofile
 To ensure that your master branch is up-to-date, use the pull command:
 
 ```bash
-git pull https://github.com/sercangul/dataprofile.git
+git pull https://github.com/DataScientistTX/dataprofile.git
 ```
 
 Install required python packages using requirements.txt:
