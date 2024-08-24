@@ -1,37 +1,24 @@
-import pandas as pd
 import streamlit as st
-from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+from utils import load_data, generate_profile_report
+from config import LAYOUT, TITLE, FILE_UPLOADER_TEXT, PROFILE_OPTIONS
 
-st.set_page_config(layout='wide')
+st.set_page_config(layout=LAYOUT)
 
-@st.cache_data()
-def load_data(file):
-    df = pd.read_csv(file)
-    return df
+def main():
+    st.sidebar.title(TITLE)
+    uploaded_file = st.sidebar.file_uploader(FILE_UPLOADER_TEXT)
 
-st.sidebar.title("Upload data")    
-uploaded_file = st.sidebar.file_uploader("Choose a file")
+    option = st.selectbox('Choose pandas profiling mode:', PROFILE_OPTIONS)
 
-option = st.selectbox(
-    'Choose pandas profiling mode:',
-    ('Minimal', 'Explorative', 'Default'))
+    if uploaded_file is None:
+        st.write("Please upload your data from the left panel")
+        return
 
-if uploaded_file is None:
-    st.write("Please upload your data from the left panel")
-
-if uploaded_file is not None:
-    df = load_data(uploaded_file)   
-    if option == "Default":
-        pr = ProfileReport(df, title="Pandas Profiling Report")
-
-    if option == "Minimal":
-        st.write("Selected option: Minimal. Please consider using Explorative if further exploration is required.")
-        pr = ProfileReport(df, title="Pandas Profiling Report", minimal=True)
-
-    if option == "Explorative":
-        st.write("Selected option: Explorative. This mode might be computationally expensive. Please consider using Minimal if you are experiencing problems.")
-        pr = ProfileReport(df, title="Pandas Profiling Report", explorative=True)
+    df = load_data(uploaded_file)
+    pr = generate_profile_report(df, option)
 
     st.title("Pandas Profiling in Streamlit")
     st_profile_report(pr)
+
+if __name__ == "__main__":
+    main()
